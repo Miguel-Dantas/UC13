@@ -1,0 +1,4 @@
+.tela {
+    display: flex;
+    flex-direction: column;
+}
