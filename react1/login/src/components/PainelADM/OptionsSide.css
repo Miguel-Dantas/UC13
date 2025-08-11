@@ -1,0 +1,42 @@
+#barra {
+    background-color: beige;
+    height: 100vh;
+    overflow: hidden; /* faz com o que os elemento que forem para fora da caixa suma */
+    transition: width 0.5s ease;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: beige;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0 ease;
+}
+
+#barra[style*="width: 150px"] li:hover {
+    background-color: rgb(190, 188, 188);
+}
+
+.texto {
+    white-space: nowrap; /* para não quebrar a linha */
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#barra[style*="width: 150px"] .texto {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,15 +1,18 @@
-import Botao from "./components/Botao"
-import Texto from "./components/Texto"
+import './App.css'
+import ControlsPainelADM from './pages/ControlsPainelADM'
 
-import "./App.css"
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// height: 100vh;
 
 function App() {
 
+
   return (
-    <div className="tela">
-      <Texto/>
-      <input type="text" />
-      <Botao/>
+    <div>
+      <ControlsPainelADM/>
     </div>
   )
 }
